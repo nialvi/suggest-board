@@ -4,11 +4,13 @@ import { expect } from 'chai';
 
 import updater, { init } from './updater';
 import { 
+  defaultSuggestData,
+  
   addNewSuggest, 
   ADD_NEW_SUGGEST,
+
   deleteSuggest,
-  DELETE_SUGGEST, 
-  defaultSuggestData
+  DELETE_SUGGEST
 } from './actions';
 
 const newSuggest = {

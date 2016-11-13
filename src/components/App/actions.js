@@ -23,4 +23,4 @@ export const addNewSuggest = (lastID = 0, suggest = defaultSuggestData) => ({
 export const deleteSuggest = (id) => ({
   type: DELETE_SUGGEST,
   payload: id
-})
+});

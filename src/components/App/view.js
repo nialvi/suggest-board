@@ -3,10 +3,18 @@ import { view } from 'redux-elm';
 
 import { add } from './actions';
 
+import SuggestPreview from '../SuggestPreview/view';
+
 export default view(({ model, dispatch }) => (
     <div>
-        <h1>{model.title}</h1>
-        <div>{model.count}</div>
-        <button onClick={()=> {dispatch(add(1))}} >+1</button>
+        <div>List</div>
+
+        {model.list.map((suggest, index) => 
+            <SuggestPreview
+                key={index} 
+                dispatch={dispatch} 
+                suggest={suggest} 
+            />
+        )}
     </div>
 ));
