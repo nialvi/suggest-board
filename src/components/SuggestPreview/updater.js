@@ -24,8 +24,8 @@ const voting = (model, voted) => {
             return {
                 rating,
                 voted: null
-            };
-        }
+            }
+        };
     } else {
         return {
             rating: model.rating,
