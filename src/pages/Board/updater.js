@@ -6,7 +6,7 @@ import {
 
 import { initListSuggest } from './mock';
 
-import UpdaterSuggestPreview from '../SuggestPreview/updater';
+import UpdaterSuggestPreview from '../../components/SuggestPreview/updater';
 
 export const init = (arraySuggest = []) => ({
   list: [...arraySuggest]

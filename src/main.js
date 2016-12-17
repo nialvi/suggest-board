@@ -1,6 +1,7 @@
-import run from './bootstrap';
+// import 'babel-polyfill';
 
-import view from './components/App/view';
-import updater from './components/App/updater';
+import run from './bootstrap';
+import view from './pages/root/view';
+import updater from './pages/root/updater';
 
 run('app', view, updater);

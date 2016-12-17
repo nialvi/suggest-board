@@ -38,7 +38,7 @@ export default new Updater(init())
     .case(VOTE_SUGGEST, (model, { payload }) => {
         const { rating, voted } = voting(model, payload);
 
-        return { 
+        return {
             ...model,
             rating,
             voted  

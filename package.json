@@ -6,7 +6,7 @@
   "scripts": {
     "test": "karma start ./config/karma.conf.js --auto-watch",
     "test-ci": "karma start ./config/karma.conf.js --single-run",
-    "start": "./node_modules/.bin/webpack-dev-server --config ./config/webpack.front.conf.js --host 0.0.0.0 --port 3000 --hot --content-base ./src"
+    "start": "./node_modules/.bin/webpack-dev-server --config ./config/webpack.front.conf.js --host 0.0.0.0 --port 3000 --hot --content-base ./src --history-api-fallback"
   },
   "author": "Nikolaev Viktor <nialvibox@gmail.com>",
   "license": "ISC",
@@ -37,6 +37,8 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-elm": "^3.0.2",
     "redux-saga": "^0.11.1",

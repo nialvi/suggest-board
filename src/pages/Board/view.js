@@ -3,7 +3,7 @@ import { view, forwardTo } from 'redux-elm';
 
 import { add } from './actions';
 
-import SuggestPreview from '../SuggestPreview/view';
+import SuggestPreview from '../../components/SuggestPreview/view';
 
 export default view(({ model, dispatch }) => (
     <div>
