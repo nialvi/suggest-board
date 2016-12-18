@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
+    "normalize.css": "^5.0.0",
     "react": "^15.3.2",
     "react-css-modules": "^4.1.0",
     "react-dom": "^15.3.2",
