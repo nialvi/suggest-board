@@ -2,6 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
 module.exports = {
@@ -32,6 +33,10 @@ module.exports = {
 			{
 				test: /\.css$/,
 				loader: 'style!css'
+			},
+			{
+				test: /\.less$/,
+				loader: 'style!css?modules&importLoaders=2&localIdentName=[folder]__[local]__[hash:base64:5]!less',
 			}
 		]
 	},
